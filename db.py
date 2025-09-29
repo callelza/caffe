@@ -2,10 +2,10 @@ import pymysql
 
 def get_connection():
     return pymysql.connect(
-        host="localhost",
-        user="root",
-        password="",
-        port=3306,
+        host="aws-1-ap-southeast-1.pooler.supabase.com",
+        user="postgres.snmldvihylobnakviqpj",
+        password="angza123",
+        database="postgres",
         cursorclass=pymysql.cursors.DictCursor
     )
 
